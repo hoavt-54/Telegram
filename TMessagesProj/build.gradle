@@ -1,3 +1,5 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
 buildscript {
     repositories {
         mavenCentral()
@@ -20,17 +22,17 @@ dependencies {
     compile 'com.android.support:support-v4:20.0.+'
     compile 'com.google.android.gms:play-services:3.2.+'
     compile 'net.hockeyapp.android:HockeySDK:3.0.2'
-    compile 'com.googlecode.mp4parser:isoparser:1.0.+'
+    compile 'com.googlecode.mp4parser:isoparser:1.0.2'
 }
 
 android {
     compileSdkVersion 21
     buildToolsVersion '21.0.2'
-
     signingConfigs {
         debug {
-            storeFile file("config/debug.keystore")
+            storeFile file("debug.keystore")
         }
+
 
         release {
             storeFile file("config/release.keystore")
@@ -40,30 +42,57 @@ android {
         }
     }
 
+/*
+    productFlavors {
+
+        debugVer {
+            applicationId 'org.tomato.messenger'
+        }
+    }
+*/
+
     buildTypes {
         debug {
             debuggable true
-            jniDebugBuild false
+            jniDebugBuild true
             signingConfig signingConfigs.debug
         }
-
         release {
             debuggable false
-            jniDebugBuild false
+            jniDebugBuild true
             signingConfig signingConfigs.release
         }
-
         foss {
             debuggable false
-            jniDebugBuild false
+            jniDebugBuild true
             signingConfig signingConfigs.release
         }
     }
-
     sourceSets.main {
         jniLibs.srcDir 'libs'
         jni.srcDirs = [] //disable automatic ndk-build call
     }
+
+/*
+    // call regular ndk-build(.cmd) script from app directory
+    task ndkBuild(type: Exec) {
+        if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+            commandLine 'ndk-build.cmd', '-C', file('src/main/jni').absolutePath
+        } else {
+            commandLine 'ndk-build', '-C', file('src/main/jni').absolutePath
+        }
+    }
+    clean.dependsOn 'cleanNative'
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn ndkBuild
+    }
+
+*/
+
+
+
+
+
 
     sourceSets {
         debug {
@@ -76,11 +105,13 @@ android {
             manifest.srcFile 'config/foss/AndroidManifest.xml'
         }
     }
-
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 19
-        versionCode 374
-        versionName "1.9.6"
+        versionCode 375
+        versionName '1.9.6'
+       // applicationId 'org.tomato.messenger'
+    }
+    productFlavors {
     }
 }

@@ -202,7 +202,7 @@ METHODDEF(void) my_error_exit(j_common_ptr cinfo) {
     longjmp(myerr->setjmp_buffer, 1);
 }
 
-JNIEXPORT void Java_org_telegram_messenger_Utilities_blurBitmap(JNIEnv *env, jclass class, jobject bitmap, int radius) {
+JNIEXPORT void Java_org_tomato_messenger_Utilities_blurBitmap(JNIEnv *env, jclass class, jobject bitmap, int radius) {
     if (!bitmap) {
         return;
     }
@@ -229,7 +229,7 @@ JNIEXPORT void Java_org_telegram_messenger_Utilities_blurBitmap(JNIEnv *env, jcl
     AndroidBitmap_unlockPixels(env, bitmap);
 }
 
-JNIEXPORT void Java_org_telegram_messenger_Utilities_loadBitmap(JNIEnv *env, jclass class, jstring path, jintArray bitmap, int scale, int format, int width, int height) {
+JNIEXPORT void Java_org_tomato_messenger_Utilities_loadBitmap(JNIEnv *env, jclass class, jstring path, jintArray bitmap, int scale, int format, int width, int height) {
     
     int i;
     

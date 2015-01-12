@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ballon_item_wrapper"
+    android:background="@drawable/settings_balloon_item_selector_item"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/ballon_previewImg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/wechat_chat_to_bg_normal"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:clickable="false"
+        android:id="@+id/ballon_item_check_button" />
+
+</RelativeLayout>

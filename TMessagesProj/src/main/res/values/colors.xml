@@ -6,4 +6,18 @@
     <color name="settings_background_color">#ffffffff</color>
     <color name="divider">#dcdcdc</color>
     <color name="header">#ff54759e</color>
+    <color name="line_header">#323C52</color>
+    <color name="viber_header">#764F97</color>
+    <color name="whatsapp_header">#2F4346</color>
+    <color name="wechat_header">#2E3235</color>
+    <color name="hike_header">#0F8FE1</color>
+    <color name="bee_header">#F1BF3A</color>
+    <color name="yahoo_header">#7E3C79</color>
+    <color name="msngr_header">#FFCD05</color>
+    <color name="hangouts_header">#53AB3A</color>
+    <color name="girl_header">#D963AF</color>
+    <color name="tango_header">#F14C2B</color>
+    <color name="gg_messenger_header">#F2580B</color>
+    <color name="balloon_item_pressed">#669bb3dd</color>
+    <color name="balloon_item_selected">#66bacef2</color>
 </resources>

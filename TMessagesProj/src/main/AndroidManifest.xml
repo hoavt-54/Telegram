@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.telegram.messenger"
+    package="org.tomato.messenger"
     android:installLocation="auto">
 
     <supports-screens android:anyDensity="true"
@@ -45,12 +45,12 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/AppName"
         android:theme="@style/Theme.TMessages.Start"
-        android:name="org.telegram.ui.ApplicationLoader"
+        android:name="org.tomato.ui.ApplicationLoader"
         android:hardwareAccelerated="true"
         android:largeHeap="true">
 
         <activity
-            android:name="org.telegram.ui.LaunchActivity"
+            android:name="org.tomato.ui.LaunchActivity"
             android:windowSoftInputMode="adjustResize"
             android:hardwareAccelerated="true"
             android:launchMode="singleTask"
@@ -93,15 +93,15 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="vnd.android.cursor.item/vnd.org.telegram.messenger.android.profile"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.org.tomato.messenger.android.profile"/>
             </intent-filter>
         </activity>
         <activity
-            android:name="org.telegram.ui.IntroActivity"
+            android:name="org.tomato.ui.IntroActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
         </activity>
         <activity
-            android:name="org.telegram.ui.PopupNotificationActivity"
+            android:name="org.tomato.ui.PopupNotificationActivity"
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
@@ -110,13 +110,13 @@
             android:theme="@style/Theme.TMessages.PopupNotification">
         </activity>
 
-        <receiver android:name="org.telegram.android.SmsListener">
+        <receiver android:name="org.tomato.android.SmsListener">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
-        <service android:name="org.telegram.android.AuthenticatorService"
+        <service android:name="org.tomato.android.AuthenticatorService"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator"/>
@@ -125,7 +125,7 @@
                 android:resource="@xml/auth"/>
         </service>
 
-        <service android:name="org.telegram.android.ContactsSyncAdapterService"
+        <service android:name="org.tomato.android.ContactsSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
@@ -136,18 +136,18 @@
                 android:resource="@xml/contacts" />
         </service>
 
-        <service android:name="org.telegram.android.NotificationsService" android:enabled="true"/>
-        <service android:name="org.telegram.android.NotificationRepeat" android:exported="false"/>
-        <service android:name="org.telegram.android.VideoEncodingService" android:enabled="true"/>
+        <service android:name="org.tomato.android.NotificationsService" android:enabled="true"/>
+        <service android:name="org.tomato.android.NotificationRepeat" android:exported="false"/>
+        <service android:name="org.tomato.android.VideoEncodingService" android:enabled="true"/>
 
-        <receiver android:name="org.telegram.android.AppStartReceiver" android:enabled="true">
+        <receiver android:name="org.tomato.android.AppStartReceiver" android:enabled="true">
             <intent-filter>
-                <action android:name="org.telegram.start" />
+                <action android:name="org.tomato.start" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="org.telegram.android.WearReplyReceiver" android:enabled="true"/>
+        <receiver android:name="org.tomato.android.WearReplyReceiver" android:enabled="true"/>
 
         <uses-library android:name="com.sec.android.app.multiwindow" android:required="false" />
         <meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />

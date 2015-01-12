@@ -40,10 +40,112 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
-    <!--ACTION BAR-->
+    <!--ACTION BAR Default-->
 
-    <style name="ActionBar.Transparent.TMessages.Start" parent="android:style/Widget.Material.Light.ActionBar">
+    <style name="ActionBar.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">@color/header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+
+    <!--ACTION BAR LINE-->
+
+    <style name="ActionBarLine.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/line_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!--ACTION BAR Viber-->
+
+    <style name="ActionBarViber.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/viber_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!--ACTION BAR Whatsapp-->
+
+    <style name="ActionBarWhatsapp.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/whatsapp_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!--ACTION BAR Wechat-->
+
+    <style name="ActionBarWechat.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/wechat_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!--ACTION BAR Hike-->
+
+    <style name="ActionBarHike.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/hike_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+
+    <!--ACTION BAR Bee-->
+
+    <style name="ActionBarBee.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/bee_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!--ACTION BAR Yahoo-->
+
+    <style name="ActionBarYahoo.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/yahoo_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+
+    <!--ACTION BAR Mnsg-->
+
+    <style name="ActionBarMnsg.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/msngr_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+
+    <!--ACTION BAR Hangouts-->
+
+    <style name="ActionBarHangouts.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/hangouts_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+
+    <!--ACTION BAR Girls-->
+
+    <style name="ActionBarGirl.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/girl_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+
+    <!--ACTION BAR GGMess-->
+
+    <style name="ActionBarGGmess.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/gg_messenger_header</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!--ACTION BAR Tango-->
+
+    <style name="ActionBarTango.Transparent.TMessages.Start" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/tango_header</item>
         <item name="android:logo">@drawable/transparent</item>
         <item name="android:title">""</item>
     </style>

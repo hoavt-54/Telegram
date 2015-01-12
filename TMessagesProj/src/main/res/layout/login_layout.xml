@@ -5,12 +5,12 @@
     android:background="#fafafa"
     android:fillViewport="true">
 
-    <org.telegram.ui.Views.FrameLayoutFixed
+    <org.tomato.ui.Views.FrameLayoutFixed
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top|left">
 
-        <org.telegram.ui.LoginActivityPhoneView
+        <org.tomato.ui.LoginActivityPhoneView
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -108,9 +108,9 @@
                 android:layout_marginBottom="10dp"
                 android:lineSpacingExtra="2dp"/>
 
-        </org.telegram.ui.LoginActivityPhoneView>
+        </org.tomato.ui.LoginActivityPhoneView>
 
-        <org.telegram.ui.LoginActivitySmsView
+        <org.tomato.ui.LoginActivitySmsView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginLeft="16dp"
@@ -192,9 +192,9 @@
 
             </LinearLayout>
 
-        </org.telegram.ui.LoginActivitySmsView>
+        </org.tomato.ui.LoginActivitySmsView>
 
-        <org.telegram.ui.LoginActivityRegisterView
+        <org.tomato.ui.LoginActivityRegisterView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="30dp"
@@ -289,8 +289,8 @@
 
             </LinearLayout>
 
-        </org.telegram.ui.LoginActivityRegisterView>
+        </org.tomato.ui.LoginActivityRegisterView>
 
-    </org.telegram.ui.Views.FrameLayoutFixed>
+    </org.tomato.ui.Views.FrameLayoutFixed>
 
 </ScrollView>
